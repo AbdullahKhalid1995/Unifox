@@ -1,0 +1,309 @@
+
+.clear {
+    clear: both;
+}
+
+.pd {
+    padding: 30px 0
+}
+
+.section-header {
+    text-align: center
+}
+
+.section-header p {
+    color: #888
+}
+
+.section-header .line {
+    width: 120px;
+    background: #ccc;
+    height: 2px;
+    margin: 10px auto;
+}
+
+.section-header .line span {
+    width: 80px;
+    height: 4px;
+    display:  block;
+    position: relative;
+    top:-2px;
+    margin: auto;
+    background: #7cb62f
+}
+
+/* Header */
+
+header {
+    padding: 15px 0;
+    position: fixed;
+    z-index: 9999;
+    width: 100%
+}
+
+header h2 {
+    width: 30%;
+    float: left;
+    color: #fff
+}
+
+header nav {
+    width: 70%;
+    float: left;
+}
+
+header nav ul {
+    list-style: none
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    color: #fff;
+    display: block; 
+    padding: 10px 15px;
+}
+
+header nav ul li a:hover {
+    color: #fff;
+    text-decoration: none
+}
+
+/* Home Section */
+
+.home {
+    text-align: center;
+    height: 600px;
+    background-image: url(../images/skill-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;   
+}
+
+.home .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+.home-content {
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%)
+}
+
+.home-title , .home-desc {
+    color: #fff;
+    margin-bottom: 20px
+}
+
+.home-title {
+    font-size: 45px;
+}
+
+.home-desc {
+    font-size: 19px
+}
+
+.home button , .about button {
+    width: 200px;
+    background: #7cb62f;
+    color: #fff;
+    border: 0;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+    outline: 0;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.home button:before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: -100px;
+    top: 0;
+    transition: 1s;
+    background: #000
+}
+
+.home button:after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: -100px;
+    top: 0;
+    transition: 1s;
+    background: #000
+}
+
+.home button:hover:after {
+    right: 0
+}
+.home button:hover:before {
+    left: 0;
+}
+
+.home button span {
+    position: relative;
+    z-index: 50;
+}
+
+/* About */
+.about-desc p {
+    color: #888
+}
+.about-img img {
+    width: 100%;
+}
+
+.about button {
+    width: 150px
+}
+
+/* services */
+.services {
+    background: #f7f7f7
+}
+
+.service-item {
+    text-align: center;
+    background: #fff;
+    transition: .5s;
+    margin-bottom: 15px;
+    padding: 40px 10px
+}
+
+.service-item i {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background: #7cb62f;
+    border-radius: 50%;
+    transition: 0.5s;
+    color: #fff
+}
+
+.service-item h2 {
+    color: #777;
+    transition: 0.5s
+}
+
+.service-item p {
+    line-height: 1.5;
+    transition: 0.5s;
+    color: #777
+}
+
+.service-item:hover {
+    background: #7cb62f
+}
+
+.service-item:hover i {
+    background: #fff;
+    color: #7cb62f
+}
+
+.service-item:hover h2 , 
+.service-item:hover p {
+    color: #fff
+}
+
+/* Pricing */
+.pricing-item {
+    text-align: center;
+    margin-bottom: 15px
+}
+
+.pricing-item > div {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    transition: 0.5s
+}
+
+.pricing-item > div h2{
+    margin: 0
+}
+
+.pricing-item h3{
+    font-size: 17px;
+    padding: 30px 0;
+    border-bottom: 1px solid #ccc
+}
+
+.pricing-item ul {
+    list-style: none;
+    padding: 0
+}
+
+.pricing-item ul li{
+    line-height: 2;
+    color: #888
+}
+
+.pricing-item button {
+    width: 100%;
+    background: #333;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    padding:10px 0;
+    cursor: pointer;
+    transition: 0.5s
+}
+
+.pricing-item:hover div {
+    background: #7cb62f
+}
+
+.pricing-item:hover button {
+    background: #7cb62f
+}
+
+/* Hover Action */
+.hover {
+    width: 250px;
+    height: 50px;
+    background: #333;
+    position: relative;
+}
+
+.hover span {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    background: #7cb62f;
+    transition: 0.5s;
+    bottom: 0;
+}
+
+.hover:hover span {
+    height: 100%
+}
+
+/* JavaScript Task */
+.first , .second , .result{
+    width: 100px;
+    height: 100px;
+}
+.first {
+    background: red;
+}
+
+.second {
+    background: blue
+}
+
+.result {
+    background: #fff
+}
+
